@@ -1,0 +1,29 @@
+[
+	{
+		"name": "MariMuthu",
+		"email": "mari@gmail.com",
+		"mobile": 7708420306,
+		"address": "VirudhuNager"
+	},
+
+	{
+		"name": "Hemanth",
+		"email": "hemanth@gmail.com",
+		"mobile": 9655774087,
+		"address": "Sivagangai"
+	},
+
+	{
+		"name": "Jefry",
+		"email": "jefry@gmail.com",
+		"mobile": 8098819199,
+		"address": "Manapparai"
+	},
+
+	{
+		"name": "Gunalan",
+		"email": "guna@gmail.com",
+		"mobile": 7987708088,
+		"address": "Madurai"
+	}
+]

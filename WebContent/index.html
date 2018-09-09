@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html ng-app="apps">
+<head>
+<meta charset="utf-8">
+<title>Learning Cources</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+	rel="stylesheet">
+<script data-require="angular.js@1.0.x"
+	src="http://code.angularjs.org/1.0.7/angular.min.js"
+	data-semver="1.0.7">
+	
+</script>
+<script type="text/javascript" src="js/my.js"></script>
+</head>
+<body ng-controller="registerCtrl">
+	<div class="container">
+		<!------------------------- Top Navbar --------------------------->
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<div class="navbar-brand" id="logo">
+							<img alt="" src="images/aimjoro-logo.png">
+						</div>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#section1">Home</a></li>
+						<li><a href="#section2">Courses</a></li>
+						<li><a href="#section3">Services</a></li>
+						<li><a href="#section4">Contact Us</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#section4"><span
+								class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+						<li class="dropdown"><a href="#section4"><span
+								class="glyphicon glyphicon-log-in"></span> Login</a>
+							<ul id="login-dp" class="dropdown-menu">
+								<li>
+									<div class="row">
+										<div class="col-md-12">
+											Login via
+											<div class="social-buttons">
+												<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i>
+													Facebook</a> <a href="#" class="btn btn-tw"><i
+													class="fa fa-twitter"></i> Twitter</a>
+											</div>
+											or
+											<form class="form" role="form" method="post" action="login"
+												accept-charset="UTF-8" id="login-nav">
+												<div class="form-group">
+													<label class="sr-only" for="exampleInputEmail2">Email
+														address</label> <input type="email" class="form-control"
+														id="exampleInputEmail2" placeholder="Email address"
+														required>
+												</div>
+												<div class="form-group">
+													<label class="sr-only" for="exampleInputPassword2">Password</label>
+													<input type="password" class="form-control"
+														id="exampleInputPassword2" placeholder="Password" required>
+													<div class="help-block text-right">
+														<a href="">Forget the password ?</a>
+													</div>
+												</div>
+												<div class="form-group">
+													<button type="submit" class="btn btn-primary btn-block">Sign
+														in</button>
+												</div>
+												<div class="checkbox">
+													<label> <input type="checkbox"> keep me
+														logged-in
+													</label>
+												</div>
+											</form>
+										</div>
+										<div class="bottom text-center">
+											New here ? <a href="#"><b>Join Us</b></a>
+										</div>
+									</div>
+								</li>
+							</ul></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+		<!-------------------------//End of Top Navbar ----------------------------->
+
+		<!---------------------------- Carousal Section ---------------------------->
+
+		<section id="section1">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner" id="carousal">
+					<div class="item active">
+						<img src="images/carousal-1.jpg" alt="img-responsive"
+							style="width: 100%;">
+					</div>
+
+					<div class="item">
+						<img src="images/carousal-2.jpg" alt="img-responsive"
+							style="width: 100%;">
+					</div>
+
+					<div class="item">
+						<img src="images/carousal-3.jpg" alt="img-responsive"
+							style="width: 100%;">
+					</div>
+				</div>
+
+				<a class="left carousel-control" href="#myCarousel"
+					data-slide="prev"> <span
+					class="glyphicon glyphicon-chevron-left"></span> <span
+					class="sr-only">Previous</span>
+				</a> <a class="right carousel-control" href="#myCarousel"
+					data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right"></span> <span
+					class="sr-only">Next</span>
+				</a>
+			</div>
+		</section>
+
+		<!----------------------- //End of Carousal Section ----------------------------->
+
+		<!----------------------- Courses Section --------------------------------------->
+
+		<section id="section2">
+			<div class="container">
+				<header class="heading">
+					<h2>Our Courses</h2>
+					<p>We Build Awesome Courses for your learning.</p>
+					<hr>
+				</header>
+
+				<div class="row">
+					<div class="courses">
+						<div class="col-lg-4" id="course">
+							<div class="course">
+								<img alt="img-responsive" src="images/course-1.png"
+									class="img-rounded">
+							</div>
+							<div class="course-title">
+								<h2>JAVA</h2>
+								<a href=""><img alt="img-responsive" src="images/java.png"
+									class="img-circle"></a>
+								<p>Java is a popular general-purpose programming language
+									and computing platform. It is fast, reliable, and secure.
+									According to Oracle, the company that owns Java, Java runs on 3
+									billion devices worldwide.</p>
+								<button type="button" class="btn btn-lg btn-success">Learn
+									More..</button>
+							</div>
+						</div>
+
+						<div class="col-lg-4" id="course">
+							<div class="course">
+								<img alt="img-responsive" src="images/course-2.jpg"
+									class="img-rounded">
+							</div>
+							<div class="course-title">
+								<h2>C Language</h2>
+								<a href=""><img alt="img-responsive" src="images/c.jpg"
+									class="img-circle"></a>
+								<p>C is a powerful general-purpose programming language. It
+									is fast, portable and available in all platforms. If you are
+									new to programming, C is a good choice to start your
+									programming journey.</p>
+								<button type="button" class="btn btn-lg btn-success">Learn
+									More..</button>
+							</div>
+						</div>
+
+						<div class="col-lg-4" id="course">
+							<div class="course">
+								<img alt="img-responsive" src="images/course-3.jpg"
+									class="img-rounded">
+							</div>
+							<div class="course-title">
+								<h2>Angular Js</h2>
+								<a href=""> <img alt="img-responsive"
+									src="images/angular.png" class="img-circle">
+								</a>
+								<p>AngularJS is a structured, JavaScript framework used for
+									dynamic one-page applications. Being a framework it uses code
+									templates written in HTML in order to perform particular
+									function or command.</p>
+								<button type="button" class="btn btn-lg btn-success">LearnMore..</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!------------------------- //End of Courses Section ---------------------------->
+
+		<!------------------------- Services Section ------------------------------------>
+		<section id="section3">
+			<div class="container">
+				<header class="heading">
+					<h2>Our Services</h2>
+					<hr>
+				</header>
+
+				<h1>AIMJORO TECH SOLUTIONS</h1>
+				<p>Aimjoro Tech Solutions Provided many IT/Professional Cources</p>
+
+				<div class="row">
+					<div class="services">
+						<div class="col-lg-3" id="service">
+							<img alt="img-responsive" src="images/service1.jpg"
+								class="img-rounded"> <a href="#" title="IT Courses"><h2>IT
+									Cources</h2></a>
+							<p>Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's
+								standard dummy text ever since the 1500s</p>
+						</div>
+
+						<div class="col-lg-3" id="service">
+							<img alt="img-responsive" src="images/service2.jpg"
+								class="img-rounded"> <a href="#" title="Medical Courses"><h2>Medical
+									Cources</h2></a>
+							<p>Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's
+								standard dummy text ever since the 1500s</p>
+						</div>
+
+						<div class="col-lg-3" id="service">
+							<img alt="img-responsive" src="images/service3.jpg"
+								class="img-rounded"> <a href="#"
+								title="Professional Courses"><h2>Professional Cources</h2></a>
+							<p>Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's
+								standard dummy text ever since the 1500s</p>
+						</div>
+
+						<div class="col-lg-3" id="service">
+							<img alt="img-responsive" src="images/service4.jpg"
+								class="img-rounded"> <a href="#"
+								title="Management Courses"><h2>Management Cources</h2></a>
+							<p>Lorem Ipsum is simply dummy text of the printing and
+								typesetting industry. Lorem Ipsum has been the industry's
+								standard dummy text ever since the 1500s</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--------------------------- //End of Service Section --------------------------------->
+
+		<!--------------------------- Contact Section ------------------------------------------>
+		<section id="section4">
+			<div class="container">
+				<header class="heading">
+					<h2>Contact Us</h2>
+				</header>
+				<hr>
+				<div class="row">
+					<div class="contacts">
+						<div class="col-lg-4" id="con">
+							<div class="row">
+								<div class="col-lg-6">
+									<header style="color: #fff">
+										<h2>Contact Us</h2>
+									</header>
+									<h4>Aimjoro Tech Solutions</h4>
+									<h3>Madurai</h3>
+									<p>No 79, 2nd Floor, Tower Line Cross Street,Indhrani
+										Nagar,Mudakku Salai,Bethaniyapuram,Madurai,</p>
+									<p>TamilNadu 625016</p>
+									<h3>Chennai</h3>
+
+									<p>Plot No. 241, 3rd Link Street, Nehru Nagar, Kottivakkam,
+										Chennai - 600096, Tamilnadu, India.</p>
+									<h3>Bangalore</h3>
+									<p>405, 3rd Floor Prestige Plaza , Mother Dairy Road,New
+										Yelahanka Bangalore - 560065, Karnataka, India.</p>
+								</div>
+
+								<div class="col-lg-6">
+									<header style="color: #fff">
+										<h2>Our Philosophy</h2>
+									</header>
+
+									<p>Aimjoro Tech Solutions is an Information Technology &
+										Business Consulting firm established in 2016, registered
+										office at Madurai and we are having offices - Chennai,
+										Bangalore, Delhi and Mumbai in India. Having presence in USA,
+										Australia and Malaysia. Aimjoro Tech Solutions specializes in
+										providing a wide spectrum of Professional Services and IT
+										solutions to mid-sized and large corporate through their core
+										offerings like.</p>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="col-lg-4" id="maps">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.9922562962747!2d78.08950271537809!3d9.934601692896017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00cf41dacc9965%3A0xb55200a9272f0f29!2sAimjoro+Tech+Solutions!5e0!3m2!1sen!2sin!4v1536041492614"
+								width="600" height="500" frameborder="0" style="border: 0"
+								allowfullscreen></iframe>
+						</div>
+						<div class="col-lg-4" id="contact">
+							<div class="contact-image">
+								<header style="color: #fff; text-align: center">
+									<h2>Contact</h2>
+								</header>
+								<div class="form-group">
+									<label class="control-label ">Name :</label> <input type="text"
+										class="form-control" placeholder="Enter your Name.."
+										ng-model="regName">
+								</div>
+
+								<div class="form-group">
+									<label class="control-label ">Email :</label> <input
+										type="email" class="form-control"
+										placeholder="Enter your Email Id.." ng-model="regEmail">
+								</div>
+
+								<div class="form-group">
+									<label class="control-label ">Mobile :</label> <input
+										type="text" class="form-control"
+										placeholder="Enter your Mobile Number.." ng-model="regMobile">
+								</div>
+
+								<div class="form-group">
+									<label class="control-label ">Address :</label>
+									<textarea class="form-control" cols="3" rows="5"
+										placeholder="Enter Address Here..." ng-model="regAddress"></textarea>
+								</div>
+
+								<center>
+									<button type="button" class="btn btn-lg btn-success"
+										ng-click="submit()">Submit</button>
+								</center>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!---------------------------- //End of Contact Section -------------------------------->
+
+		<!---------------------------- Footer Section ------------------------------------------>
+		<footer>
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="col-lg-6 ">
+						<div class="copyright-text">
+							<p>CopyRight © 2018 Digital All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3">
+					<ul class="social-network social-circle">
+						<li><a href="#" class="icoFacebook" title="Facebook"><i
+								class="fa fa-facebook"></i></a></li>
+						<li><a href="#" class="icoTwitter" title="Twitter"><i
+								class="fa fa-twitter"></i></a></li>
+						<li><a href="#" class="icoGoogle" title="Google +"><i
+								class="fa fa-google-plus"></i></a></li>
+						<li><a href="#" class="icoLinkedin" title="Linkedin"><i
+								class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-4" id="logo1">
+					<img alt="" src="images/aimjoro-logo.png">
+				</div>
+
+			</div>
+		</footer>
+
+		<!----------------------------- //End of Footer Section ---------------------------------->
+	</div>
+</body>
+</html>

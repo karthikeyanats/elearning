@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<meta charset="ISO-8859-1">
+<title>View Table</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link
+	href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+	rel="stylesheet">
+<script data-require="angular.js@1.0.x"
+	src="http://code.angularjs.org/1.0.7/angular.min.js"
+	data-semver="1.0.7">
+	
+</script>
+</head>
+<body ng-controller="appCtrl">
+	<h1>hello</h1>
+
+
+	<script type="text/javascript">
+		var app = angular.module('app', []);
+
+		app.controller('appCtrl', function($scope, $http) {
+			var pathname = window.location.pathname; // Returns path only
+			var url = window.location.href; // Returns full URL
+
+			var text = new URL(url);
+			var c = url.searchParams.get("name");
+			console.log(c);
+
+		});
+	</script>
+</body>
+</html>
